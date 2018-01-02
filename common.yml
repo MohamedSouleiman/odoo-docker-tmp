@@ -1,0 +1,10 @@
+odoo:
+  build: .
+  ports:
+    - "80:8069"
+  container_name: odoo_docker_tmp
+
+database:
+  image: postgres:9.4
+  container_name: postgres_docker_tmp
+  env_file: .env
